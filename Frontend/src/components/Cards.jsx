@@ -45,7 +45,7 @@ function Cards() {
               src={book.image}
               alt={book.name}
               className="h-full w-full object-contain rounded-t-xl p-2"
-            />
+            /> 
           </figure>
 
           {/* Body */}

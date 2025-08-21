@@ -3,6 +3,7 @@ import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
 import { BookOpen, Menu } from "lucide-react"; // 👈 icons
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [authUser, setAuthUser] = useAuth();
@@ -36,10 +37,14 @@ function Navbar() {
 
   const navItems = (
     <>
-      <li><a href="/" className="hover:text-indigo-600">Home</a></li>
+      {/* <li><a href="/" className="hover:text-indigo-600">Home</a></li>
       <li><a href="/course" className="hover:text-indigo-600">Course</a></li>
       <li><a href="/contact" className="hover:text-indigo-600">Contact</a></li>
-      <li><a href="/about" className="hover:text-indigo-600">About</a></li>
+      <li><a href="/about" className="hover:text-indigo-600">About</a></li> */}
+      <li><Link to="/" className="hover:text-indigo-600">Home</Link></li>
+      <li><Link to="/course" className="hover:text-indigo-600">Course</Link></li>
+      <li><Link to="/contact" className="hover:text-indigo-600">Contact</Link></li>
+      <li><Link to="/about" className="hover:text-indigo-600">About</Link></li>
     </>
   );
 

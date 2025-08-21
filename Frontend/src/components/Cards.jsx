@@ -9,7 +9,7 @@ function Cards() {
       title: "A classic by F. Scott Fitzgerald",
       price: 0,
     },
-    {
+    {  
       image: "https://covers.openlibrary.org/b/id/11153211-L.jpg",
       name: "Atomic Habits",
       category: "Self Help",
